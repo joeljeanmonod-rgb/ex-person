@@ -4,6 +4,8 @@
 ![alt text](images/class.png "UML")
 
 ## Informations
+> Laisser dans toutes les classes un constructeur par défaut.
+
 Lors de la création de n'importe quel objet, il faut afficher un message.
 
 Lors de la destruction d'un objet, il faut afficher un message avec le nom de l'objet détruit.
@@ -22,3 +24,6 @@ Tous les paramètres des étudiants ou professeurs sont passés lors de l'instan
 ## Questions
 - Quel est l'ordre d'appel pour les constructeurs et destructeur ?
 - Peut-on améliorer l'architecture ?
+
+## Protection
+- Supprimer les constructeurs par défaut pour obliger le passage de paramètres lors de la construction.
