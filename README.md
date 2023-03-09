@@ -19,7 +19,7 @@ Tous les paramètres des étudiants ou professeurs sont passés lors de l'instan
 - printInfos : affiche le nom et le numéro du professeur sur la console.
 
 ### Class School
-- printList : affiche la liste des professeurs et ensuite la liste des étudiants avec les informations.
+- printList : affiche la liste des salles et pour chaque salle les professeurs et les élèves.
 
 ### class Room
 - printList : affiche la liste des étudiants et ensuite la liste des professeurs avec les informations.
