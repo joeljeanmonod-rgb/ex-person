@@ -1,7 +1,7 @@
 # Exercice héritage
 
 ## Diagramme de classe
-![alt text](images/class.png "UML")
+![alt text](images/class-room.png "UML")
 
 ## Informations
 > Laisser dans toutes les classes un constructeur par défaut.
@@ -16,13 +16,15 @@ Tous les paramètres des étudiants ou professeurs sont passés lors de l'instan
 - printInfos : affiche le nom et la moyenne de l'étudiant sur la console.
 
 ### Class Professor
-- printInfos : affiche le nom et le salaire du professeur sur la console.
+- printInfos : affiche le nom et le numéro du professeur sur la console.
 
 ### Class School
 - printList : affiche la liste des professeurs et ensuite la liste des étudiants avec les informations.
 
+### class Room
+- printList : affiche la liste des étudiants et ensuite la liste des professeurs avec les informations.
+
 ## Questions
-- Quel est l'ordre d'appel pour les constructeurs et destructeur ?
 - Peut-on améliorer l'architecture ?
 
 ## Protection
