@@ -1,7 +1,9 @@
 
 #include <iostream>
+#include <vector>
 
 
+// ----------- Person -----------
 class Person {
 public:
     Person(std::string name,int age):
@@ -18,6 +20,10 @@ protected:
     int age_;
 };
 
+
+
+// ----------- Student -----------
+
 class Student : public Person{
 
 public:
@@ -31,10 +37,13 @@ public:
         std::cout << "Average   : " << average_ << std::endl;
     }
 
+    bool operator==(const Student& student) const;
 
 private:
     double average_;
 };
+
+// ----------- Professor -----------
 
 class Professor :public Person
 {
@@ -56,20 +65,46 @@ private:
 class Room {
 public:
 
+    Room(Professor& professor):professor_(professor){}
 
+	void addStudent(Student& student)
+    {
+        // Check if the max number of student is achieve.
+        if(students_.size() < 10)
+        {
+            students_.push_back(student);
+        }
+        else
+        {
+            std::cout << "Max number of students in the class achieved";
+        }
+    }
 
-
-
+	void removeStudent(const Student& student) const
+	{
+        for (int i = 0; i < students_.size(); i++)
+        {
+            // Check if this is the good student
+            if (students_[i] == student)
+            {
+                students_.erase(i);
+                break;
+            }
+        }
+    }
 
 
 private:
     std::string name_;
-    Professor& prof_;
+    Professor& professor_;
+    std::vector<Student*> students_;
 };
 
 
 class School {
+public:
 
+   
 };
 
 int main()
